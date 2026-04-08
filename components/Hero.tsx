@@ -103,7 +103,8 @@ export default function Hero() {
             margin: "0 auto 3rem",
           }}
         >
-          From the Motherland to Portland
+          From the Motherland to Portland —<br />
+          every dish a memory of home.
         </p>
 
         {/* CTA buttons */}
