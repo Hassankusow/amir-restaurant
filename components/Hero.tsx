@@ -103,8 +103,8 @@ export default function Hero() {
             margin: "0 auto 3rem",
           }}
         >
-          Authentic flavors of the Indian Ocean coast,<br />
-          passed down through generations.
+          A love letter to the motherland —<br />
+          every dish a memory of home.
         </p>
 
         {/* CTA buttons */}
