@@ -59,40 +59,6 @@ export default function About() {
           generations. When you walk through our doors, you&rsquo;re family.
         </p>
 
-        {/* Badges */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexWrap: "wrap",
-            gap: "1rem",
-          }}
-        >
-          {[
-            { icon: "☪", label: "Halal Certified" },
-            { icon: "✊", label: "Black-Owned" },
-            { icon: "🌍", label: "East African Cuisine" },
-            { icon: "👨‍👩‍👧‍👦", label: "Family-Owned" },
-          ].map((badge) => (
-            <div
-              key={badge.label}
-              style={{
-                border: "1px solid rgba(201,169,110,0.4)",
-                borderRadius: "100px",
-                padding: "0.5rem 1.25rem",
-                display: "flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                color: "#e8d5b0",
-                fontSize: "0.85rem",
-                letterSpacing: "0.05em",
-              }}
-            >
-              <span>{badge.icon}</span>
-              <span>{badge.label}</span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
