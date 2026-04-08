@@ -10,23 +10,23 @@ const categories = [
   {
     name: "Rice Plates",
     items: [
-      { name: "Rice with Goat Meat", desc: "Fragrant basmati rice with tender goat — served with salad, hot sauce, and banana", price: "$10" },
-      { name: "Rice with Beef", desc: "Seasoned beef over basmati rice — served with salad, hot sauce, and banana", price: "$10" },
-      { name: "Rice with Chicken", desc: "Spiced chicken over basmati rice — served with salad, hot sauce, and banana", price: "$10" },
+      { name: "Rice with Goat Meat", desc: "Fragrant basmati rice with tender goat — served with salad, hot sauce, and banana", price: "$20" },
+      { name: "Rice with Beef", desc: "Seasoned beef over basmati rice — served with salad, hot sauce, and banana", price: "$20" },
+      { name: "Rice with Chicken", desc: "Spiced chicken over basmati rice — served with salad, hot sauce, and banana", price: "$20" },
     ],
   },
   {
     name: "Pasta Plates",
     items: [
-      { name: "Pasta with Goat Meat", desc: "East African-style pasta with slow-cooked goat — served with salad, hot sauce, and banana", price: "$10" },
-      { name: "Pasta with Beef", desc: "East African-style pasta with seasoned beef — served with salad, hot sauce, and banana", price: "$10" },
-      { name: "Pasta with Chicken", desc: "East African-style pasta with chicken — served with salad, hot sauce, and banana", price: "$10" },
+      { name: "Pasta with Goat Meat", desc: "East African-style pasta with slow-cooked goat — served with salad, hot sauce, and banana", price: "$20" },
+      { name: "Pasta with Beef", desc: "East African-style pasta with seasoned beef — served with salad, hot sauce, and banana", price: "$20" },
+      { name: "Pasta with Chicken", desc: "East African-style pasta with chicken — served with salad, hot sauce, and banana", price: "$20" },
     ],
   },
   {
     name: "Specialties",
     items: [
-      { name: "Sports Combination", desc: "Feeds two — choice of beef, chicken, fish, or goat with all the sides", price: "$20" },
+      { name: "Sports Combination", desc: "Feeds two — choice of beef, chicken, fish, or goat with all the sides", price: "$40" },
       { name: "Basmati Fried Rice & Goat", desc: "Wok-fried basmati rice with tender goat meat", price: "$19.99" },
       { name: "Basmati Fried Rice & Lamb Chops", desc: "Fried rice with grilled lamb chops", price: "$23.99" },
       { name: "Chicken Suqar & Fried Rice", desc: "Sautéed spiced chicken with basmati fried rice", price: "$19.99" },
