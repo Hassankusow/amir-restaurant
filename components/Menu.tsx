@@ -35,6 +35,8 @@ const categories = [
   {
     name: "Drinks",
     items: [
+      { name: "Somali Tea (Shaah)", desc: "Spiced black tea brewed with cardamom, cloves, and cinnamon", price: "$2" },
+      { name: "Somali Coffee (Qaxwo)", desc: "Traditional Somali coffee with cardamom — served black", price: "$2" },
       { name: "Mango Juice", desc: "Bottled mango juice", price: "$1" },
       { name: "Soda", desc: "Coke or Sprite", price: "$1" },
     ],
