@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amir's Motherland Dish
 
-## Getting Started
+**Live site: [amir-restaurant.vercel.app](https://amir-restaurant.vercel.app)**
 
-First, run the development server:
+Restaurant website for Amir's Motherland Dish — a real Somali/East African restaurant in Portland, OR (Montavilla neighborhood). Built and deployed for the family business.
+
+---
+
+## Features
+
+- Full menu with real prices (rice plates, pasta, specialties, drinks)
+- Authentic Somali food gallery with dish names
+- Contact section with real phone number, address, and hours
+- Order by phone CTA + delivery links (DoorDash, Uber Eats, GrubHub)
+- Mobile-responsive navbar with smooth scroll
+- Mogadishu-inspired dark aesthetic with warm sand and ocean tones
+
+---
+
+## Tech Stack
+
+Next.js 15 · React 19 · TypeScript · Tailwind CSS · Vercel
+
+---
+
+## Setup
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Author
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Hassan Abdi**
+[GitHub](https://github.com/Hassankusow) · [LinkedIn](https://linkedin.com/in/hassan-abdi-119357267)
