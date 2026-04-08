@@ -8,17 +8,6 @@ export default function About() {
         textAlign: "center",
       }}
     >
-      <p
-        style={{
-          color: "#c9a96e",
-          fontSize: "0.7rem",
-          letterSpacing: "0.35em",
-          textTransform: "uppercase",
-          marginBottom: "1rem",
-        }}
-      >
-        Our Story
-      </p>
       <h2
         style={{
           fontFamily: "var(--font-playfair), serif",
