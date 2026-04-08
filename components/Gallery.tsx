@@ -63,27 +63,13 @@ export default function Gallery() {
           <div style={{ width: "50px", height: "1px", backgroundColor: "#c9a96e", margin: "0 auto" }} />
         </div>
 
-        {/* Grid */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gridTemplateRows: "auto",
-            gap: "0.75rem",
-          }}
-        >
+        {/* Grid — 1 col on mobile, 3 col on desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {images.map((img, i) => (
             <div
               key={i}
-              style={{
-                gridColumn: i === 0 ? "span 2" : "span 1",
-                gridRow: i === 0 ? "span 2" : "span 1",
-                overflow: "hidden",
-                borderRadius: "2px",
-                aspectRatio: i === 0 ? undefined : "4/3",
-                position: "relative",
-              }}
-              className="group"
+              style={{ overflow: "hidden", borderRadius: "2px", position: "relative", aspectRatio: "4/3" }}
+              className={i === 0 ? "sm:col-span-2 sm:row-span-2" : ""}
             >
               <img
                 src={img.src}
@@ -94,7 +80,6 @@ export default function Gallery() {
                   objectFit: "cover",
                   display: "block",
                   transition: "transform 0.5s ease",
-                  minHeight: i === 0 ? "420px" : undefined,
                 }}
                 onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.06)")}
                 onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
@@ -114,7 +99,7 @@ export default function Gallery() {
                   style={{
                     fontFamily: "var(--font-playfair), serif",
                     color: "#e8d5b0",
-                    fontSize: i === 0 ? "1.2rem" : "0.95rem",
+                    fontSize: "1rem",
                     fontStyle: "italic",
                     fontWeight: 600,
                   }}
