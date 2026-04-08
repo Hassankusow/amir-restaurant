@@ -103,8 +103,7 @@ export default function Hero() {
             margin: "0 auto 3rem",
           }}
         >
-          A love letter to the motherland —<br />
-          every dish a memory of home.
+          From the Motherland to Portland
         </p>
 
         {/* CTA buttons */}
