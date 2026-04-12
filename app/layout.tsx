@@ -17,8 +17,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Amir — East African Cuisine",
-  description: "Authentic East African cuisine in the heart of the city. Order by phone.",
+  title: "Amir's Motherland Dish — Somali & East African Cuisine | Portland, OR",
+  description: "Authentic halal Somali and East African cuisine in Montavilla, Portland. Order by phone: (503) 933-7368. Open daily 11AM–8PM.",
 };
 
 export default function RootLayout({
