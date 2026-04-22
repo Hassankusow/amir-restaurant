@@ -15,7 +15,7 @@ export default function Navbar() {
           <span
             style={{ fontFamily: 'var(--font-playfair), serif', color: "#c9a96e", fontSize: "1.4rem", fontWeight: 700 }}
           >
-            Amir
+            Ubax
           </span>
           <span style={{ color: "#e8d5b0", fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase" }}>
             East African Cuisine

@@ -63,8 +63,31 @@ export default function Contact() {
             (503) 933‑7368
           </a>
           <p style={{ color: "#8a7a6a", fontSize: "0.85rem" }}>
-            Call to order — also available on DoorDash, Uber Eats &amp; GrubHub.
+            Also available for delivery online:
           </p>
+          <div style={{ display: "flex", justifyContent: "center", gap: "1.25rem", marginTop: "0.75rem", flexWrap: "wrap" }}>
+            {[
+              { label: "DoorDash", href: "https://www.doordash.com/search/store/amir%27s+motherland+dish+portland/" },
+              { label: "Uber Eats", href: "https://www.ubereats.com/search?q=amir%27s+motherland+dish+portland" },
+              { label: "GrubHub", href: "https://www.grubhub.com/search?queryText=amir+motherland+portland" },
+            ].map((platform) => (
+              <a
+                key={platform.label}
+                href={platform.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#c9a96e",
+                  fontSize: "0.82rem",
+                  textDecoration: "none",
+                  borderBottom: "1px solid rgba(201,169,110,0.4)",
+                  paddingBottom: "1px",
+                }}
+              >
+                {platform.label}
+              </a>
+            ))}
+          </div>
         </div>
 
         {/* Info cards */}
@@ -79,15 +102,47 @@ export default function Contact() {
           {[
             {
               label: "Hours",
-              lines: ["Sunday – Saturday", "11:00 AM – 8:00 PM", "Open every day"],
+              content: (
+                <>
+                  <p style={{ color: "#3d2b1f", fontSize: "0.88rem", lineHeight: 1.7 }}>Sunday – Saturday</p>
+                  <p style={{ color: "#3d2b1f", fontSize: "0.88rem", lineHeight: 1.7 }}>11:00 AM – 8:00 PM</p>
+                  <p style={{ color: "#3d2b1f", fontSize: "0.88rem", lineHeight: 1.7 }}>Open every day</p>
+                </>
+              ),
             },
             {
               label: "Location",
-              lines: ["7100 NE Glisan St", "Portland, OR 97213", "Montavilla neighborhood"],
+              content: (
+                <a
+                  href="https://maps.google.com/?q=7100+NE+Glisan+St+Portland+OR+97213"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <p style={{ color: "#3d2b1f", fontSize: "0.88rem", lineHeight: 1.7 }}>7100 NE Glisan St</p>
+                  <p style={{ color: "#3d2b1f", fontSize: "0.88rem", lineHeight: 1.7 }}>Portland, OR 97213</p>
+                  <p style={{ color: "#2c6e8a", fontSize: "0.82rem", lineHeight: 1.7, marginTop: "0.25rem" }}>
+                    View on Google Maps →
+                  </p>
+                </a>
+              ),
             },
             {
               label: "Order Online",
-              lines: ["DoorDash · Uber Eats", "GrubHub · Seamless", "amirsportland.com"],
+              content: (
+                <>
+                  <a
+                    href="https://amirsportland.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#2c6e8a", fontSize: "0.88rem", lineHeight: 1.7, display: "block", textDecoration: "none" }}
+                  >
+                    amirsportland.com
+                  </a>
+                  <p style={{ color: "#3d2b1f", fontSize: "0.88rem", lineHeight: 1.7 }}>DoorDash · Uber Eats</p>
+                  <p style={{ color: "#3d2b1f", fontSize: "0.88rem", lineHeight: 1.7 }}>GrubHub · Seamless</p>
+                </>
+              ),
             },
           ].map((card) => (
             <div
@@ -111,11 +166,7 @@ export default function Contact() {
               >
                 {card.label}
               </p>
-              {card.lines.map((line, i) => (
-                <p key={i} style={{ color: "#3d2b1f", fontSize: "0.88rem", lineHeight: 1.7 }}>
-                  {line}
-                </p>
-              ))}
+              {card.content}
             </div>
           ))}
         </div>

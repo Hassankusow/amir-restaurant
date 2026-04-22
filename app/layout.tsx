@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Amir's Motherland Dish — Somali & East African Cuisine | Portland, OR",
+  title: "Ubax — Somali & East African Cuisine | Portland, OR",
   description: "Authentic halal Somali and East African cuisine in Montavilla, Portland. Order by phone: (503) 933-7368. Open daily 11AM–8PM.",
 };
 

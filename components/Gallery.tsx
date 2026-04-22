@@ -1,31 +1,36 @@
 "use client";
+import Image from "next/image";
 
-// Real Somali food images sourced from traditional Somali dish references
 const images = [
   {
-    src: "https://miro.medium.com/v2/resize:fit:1100/0*eRByhUyhwGeE0b7C",
-    alt: "Bariis Iskukaris — Somali spiced rice",
-    label: "Bariis Iskukaris",
+    src: "https://amirsportland.com/images/1.jpg",
+    alt: "Somali rice plate with goat meat and sides",
+    label: "Rice Plate",
   },
   {
-    src: "https://miro.medium.com/v2/resize:fit:1100/0*8z_e3IxLJcijJJpl",
-    alt: "Sambuusa — Somali crispy pastry",
-    label: "Sambuusa",
+    src: "https://amirsportland.com/images/2.jpg",
+    alt: "Homemade sambusa — crispy Somali pastry",
+    label: "Sambusa",
   },
   {
-    src: "https://miro.medium.com/v2/resize:fit:1100/0*MMSxK18-NnsRxI9U",
-    alt: "Suqaar — Somali stir-fried meat",
-    label: "Suqaar",
+    src: "https://amirsportland.com/images/3.jpg",
+    alt: "East African pasta with spiced meat sauce",
+    label: "Baasto",
   },
   {
-    src: "https://miro.medium.com/v2/resize:fit:1100/0*4pxqJIF1ybZfz9PR",
-    alt: "Baasto Soomaali — Somali-style pasta",
-    label: "Baasto Soomaali",
-  },
-  {
-    src: "https://miro.medium.com/v2/resize:fit:1100/0*L9iXYlPcvDW2D8P-",
-    alt: "Hilib Ari — slow-cooked goat meat",
+    src: "https://amirsportland.com/images/4.jpg",
+    alt: "Slow-cooked goat — Somali specialty",
     label: "Hilib Ari",
+  },
+  {
+    src: "https://amirsportland.com/images/5.jpg",
+    alt: "Somali tea and fresh-made flatbread",
+    label: "Shaah & Japati",
+  },
+  {
+    src: "https://amirsportland.com/images/6.jpg",
+    alt: "Full East African spread with all the sides",
+    label: "Full Spread",
   },
 ];
 
@@ -71,18 +76,14 @@ export default function Gallery() {
               style={{ overflow: "hidden", borderRadius: "2px", position: "relative", aspectRatio: "4/3" }}
               className={i === 0 ? "sm:col-span-2 sm:row-span-2" : ""}
             >
-              <img
+              <Image
                 src={img.src}
                 alt={img.alt}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  display: "block",
-                  transition: "transform 0.5s ease",
-                }}
+                fill
+                style={{ objectFit: "cover", transition: "transform 0.5s ease" }}
                 onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.06)")}
                 onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
               />
               {/* Dish name overlay */}
               <div
@@ -93,6 +94,7 @@ export default function Gallery() {
                   right: 0,
                   padding: "1rem",
                   background: "linear-gradient(to top, rgba(26,16,8,0.85) 0%, transparent 100%)",
+                  zIndex: 1,
                 }}
               >
                 <span

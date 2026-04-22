@@ -64,7 +64,7 @@ export default function Hero() {
             marginBottom: "0.5rem",
           }}
         >
-          Amir
+          Ubax
         </h1>
 
         {/* Subtitle */}

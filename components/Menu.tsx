@@ -3,8 +3,8 @@ const categories = [
     name: "Starters",
     items: [
       { name: "Sambusa", desc: "Homemade crispy pastry filled with spiced beef — a Somali classic", price: "$3.99" },
-      { name: "Mendassi", desc: "House-made Somali flatbread, served warm", price: "" },
-      { name: "Japati / Anjara", desc: "Soft layered bread with your choice of chicken or goat", price: "" },
+      { name: "Mendassi", desc: "House-made Somali flatbread, served warm", price: "Ask for price" },
+      { name: "Japati / Anjara", desc: "Soft layered bread with your choice of chicken or goat", price: "Ask for price" },
     ],
   },
   {
