@@ -3,34 +3,29 @@ import Image from "next/image";
 
 const images = [
   {
-    src: "https://amirsportland.com/images/1.jpg",
-    alt: "Somali rice plate with goat meat and sides",
-    label: "Rice Plate",
+    src: "/amir-2.jpg",
+    alt: "Two full rice plates with goat and beef, tea and juice on the side",
+    label: "Rice Plates",
   },
   {
-    src: "https://amirsportland.com/images/2.jpg",
-    alt: "Homemade sambusa — crispy Somali pastry",
-    label: "Sambusa",
+    src: "/amir-3.jpg",
+    alt: "Sports Combination — full East African spread with rice, fish, chicken, and salad",
+    label: "Sports Combo",
   },
   {
-    src: "https://amirsportland.com/images/3.jpg",
-    alt: "East African pasta with spiced meat sauce",
-    label: "Baasto",
-  },
-  {
-    src: "https://amirsportland.com/images/4.jpg",
-    alt: "Slow-cooked goat — Somali specialty",
+    src: "/amir-4.jpg",
+    alt: "Slow-cooked goat with rice and vegetables",
     label: "Hilib Ari",
   },
   {
-    src: "https://amirsportland.com/images/5.jpg",
-    alt: "Somali tea and fresh-made flatbread",
-    label: "Shaah & Japati",
+    src: "/amir-1.jpg",
+    alt: "Chicken suqaar with colorful bell peppers over basmati rice",
+    label: "Suqaar & Rice",
   },
   {
-    src: "https://amirsportland.com/images/6.jpg",
-    alt: "Full East African spread with all the sides",
-    label: "Full Spread",
+    src: "/amir-5.jpg",
+    alt: "Starters plate — sambusa, mendassi, and dipping sauces",
+    label: "Sambusa & Mendassi",
   },
 ];
 
